@@ -95,7 +95,11 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen pt-20">
+<<<<<<< HEAD
       {/* Hero Section with Background Image */}
+=======
+      
+>>>>>>> 864c6b63746baed3e85ee4f0c167970a9a2a0060
       <section
         ref={heroRef}
         className="relative py-32 overflow-hidden"
@@ -128,7 +132,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* Services Grid */}
+=======
+>>>>>>> 864c6b63746baed3e85ee4f0c167970a9a2a0060
       <section ref={servicesRef} className="py-20 bg-white">
         <div className="container px-4 mx-auto">
           <div className="space-y-24">
@@ -175,6 +182,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-primary-light text-white relative">
         <div className="absolute inset-0 bg-[url('/images/tech-pattern.png')] opacity-10"></div>
@@ -195,6 +203,9 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+=======
+     
+>>>>>>> 864c6b63746baed3e85ee4f0c167970a9a2a0060
     </div>
   )
 }
