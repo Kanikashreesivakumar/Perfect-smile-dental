@@ -131,7 +131,8 @@ export default function FloatingElements() {
             strokeLinejoin="round"
             className="w-8 h-8 text-purple-500 opacity-70"
           >
-            <path d="M16 12c0-2.5-4-2.5-4-5 0-1.5 1-2 2-2 2.1 0 3 1.9 3 3h2c0-1.5-1-5-5-5-3 0-5 1.5-5 4 0 3.5 4 3.5 4 6 0 1.5-1 2-2 2-2.2 0-3-2-3-3H6c0 2 1 5 5 5 3 0 5-1.5 5-4Z"></path>
+            {/* Tooth icon SVG */}
+            <path d="M12 2C7.5 2 5 5.5 5 9c0 4.5 2.5 9 7 13 4.5-4 7-8.5 7-13 0-3.5-2.5-7-7-7zm0 2c3.3 0 5 2.7 5 5 0 3.5-2.2 7.2-5 10.7C9.2 16.2 7 12.5 7 9c0-2.3 1.7-5 5-5z" />
           </svg>
         </div>
       </motion.div>

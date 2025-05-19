@@ -17,9 +17,24 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-6">
               <div className="relative w-10 h-10 mr-2">
-                <Image src="/images/teeth.webp" alt="Perfect Smile Logo" fill className="object-contain" />
+                <Image
+                  src="/images/tooth-logo.png"
+                  alt="Perfect Smile Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
-              <span className="font-bold text-xl text-primary">Perfect Smile</span>
+              <div className="relative h-8 w-auto">
+                <Image
+                  src="/images/perfect-smile-text.png"
+                  alt="Perfect Smile Text"
+                  height={32}
+                  width={150}
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
             <p className="text-gray-600 mb-6">
               Providing exceptional dental care with a gentle touch. Your perfect smile is our priority.
