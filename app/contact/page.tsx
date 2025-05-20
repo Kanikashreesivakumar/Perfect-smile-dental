@@ -221,6 +221,8 @@ export default function ContactPage() {
                       className="object-cover"
                     />
                   </div>
+                  
+                  
                   <div className="relative h-40 rounded-xl overflow-hidden shadow-lg">
                     <Image
                       src="/images/contact/treatment-room.png"

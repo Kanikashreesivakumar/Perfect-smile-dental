@@ -49,22 +49,28 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="relative w-10 h-10 mr-2">
-              <Image src="/images/tooth-logo.png" alt="Perfect Smile Logo" fill className="object-contain" />
+            <div className="relative w-14 h-14 mr-3" style={{ background: 'transparent' }}>
+              <Image 
+                src="/images/tooth-logo.png" 
+                alt="Perfect Smile Logo" 
+                fill 
+                className="object-contain"
+                style={{ backgroundColor: 'transparent' }}
+              />
             </div>
-            <div className="relative h-8 w-48">
+            <div className="relative h-12 w-64" style={{ background: 'transparent' }}>
               <Image
                 src="/images/perfect-smile-text.png"
                 alt="Perfect Smile"
                 fill
                 className="object-contain object-left"
+                style={{ backgroundColor: 'transparent' }}
               />
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
+    
           <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
               <Link
@@ -75,8 +81,8 @@ export default function Navbar() {
                   pathname === link.href
                     ? "bg-purple-100 text-purple-800"
                     : isScrolled || pathname !== "/"
-                      ? "text-gray-700 hover:bg-gray-100"
-                      : "text-white/90 hover:text-white hover:bg-white/10",
+                      ? "text-black hover:bg-gray-100" // Changed from text-gray-700 to text-black
+                      : "text-black hover:bg-white/10" // Changed from text-white/90 to text-black
                 )}
               >
                 {link.label}
@@ -86,7 +92,7 @@ export default function Navbar() {
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-2">
-            <Button asChild size="sm" className="hidden sm:flex premium-button rounded-full">
+            <Button asChild size="sm" className="hidden sm:flex premium-button text-black rounded-full">
               <Link href="/appointment">Book Appointment</Link>
             </Button>
 

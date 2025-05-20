@@ -5,6 +5,10 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/swiper-bundle.css"
+import { Autoplay } from "swiper/modules"
+import { Pagination, Navigation } from "swiper/modules"
 
 const clinicImages = [
   {
@@ -58,103 +62,35 @@ export default function ClinicShowcase() {
   }
 
   return (
-    <div className="clinic-showcase">
-      <div className="flex justify-end mb-6 space-x-2">
-        <Button
-          variant={view === "carousel" ? "default" : "outline"}
-          size="sm"
-          onClick={() => setView("carousel")}
-          className={view === "carousel" ? "bg-purple-800 text-white" : ""}
-        >
-          Carousel
-        </Button>
-        <Button
-          variant={view === "grid" ? "default" : "outline"}
-          size="sm"
-          onClick={() => setView("grid")}
-          className={view === "grid" ? "bg-purple-800 text-white" : ""}
-        >
-          Grid View
-        </Button>
-      </div>
-
-      {view === "carousel" ? (
-        <div className="relative">
-          <div className="overflow-hidden rounded-2xl">
-            <motion.div
-              key={currentIndex}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              className="relative h-[500px] w-full"
-            >
+    <div className="relative">
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3000, 
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper rounded-xl overflow-hidden"
+      >
+        {clinicImages.map((image, index) => (
+          <SwiperSlide key={index}>
+            <div className="relative w-full h-[600px]">
               <Image
-                src={clinicImages[currentIndex].src || "/placeholder.svg"}
-                alt={clinicImages[currentIndex].alt}
+                src={image.src}
+                alt={image.alt}
                 fill
                 className="object-cover"
+                priority={index === 0}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                <h3 className="text-2xl font-bold mb-2">{clinicImages[currentIndex].title}</h3>
-                <p className="text-lg">{clinicImages[currentIndex].description}</p>
-              </div>
-            </motion.div>
-          </div>
-
-          <Button
-            variant="outline"
-            size="icon"
-            className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg z-10 hover:bg-white"
-            onClick={prevSlide}
-          >
-            <ChevronLeft className="h-6 w-6" />
-          </Button>
-
-          <Button
-            variant="outline"
-            size="icon"
-            className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg z-10 hover:bg-white"
-            onClick={nextSlide}
-          >
-            <ChevronRight className="h-6 w-6" />
-          </Button>
-
-          <div className="flex justify-center mt-4 space-x-2">
-            {clinicImages.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  currentIndex === index ? "bg-purple-800 w-6" : "bg-gray-300"
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-      ) : (
-        <div className="clinic-showcase-grid">
-          {clinicImages.map((image, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="clinic-image h-[250px]"
-            >
-              <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <div className="text-white">
-                  <h3 className="font-bold">{image.title}</h3>
-                  <p className="text-sm">{image.description}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      )}
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   )
 }

@@ -13,24 +13,24 @@ export default function Footer() {
     <footer className="bg-gradient-to-r from-purple-100 to-purple-300 border-t border-gray-100">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* About */}
+        
           <div>
             <div className="flex items-center mb-6">
-              <div className="relative w-10 h-10 mr-2">
-                <Image
-                  src="/images/tooth-logo.png"
-                  alt="Perfect Smile Logo"
-                  fill
+              <div className="relative w-14 h-14 mr-3">
+                <Image 
+                  src="/images/tooth-logo.png" 
+                  alt="Perfect Smile Logo" 
+                  fill 
                   className="object-contain"
                   priority
                 />
               </div>
-              <div className="relative h-8 w-auto">
+              <div className="relative h-10 w-auto">
                 <Image
                   src="/images/perfect-smile-text.png"
                   alt="Perfect Smile Text"
-                  height={32}
-                  width={150}
+                  height={40}
+                  width={180}
                   className="object-contain"
                   priority
                 />
@@ -71,7 +71,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="font-semibold text-lg mb-6 text-gray-900">Quick Links</h3>
             <ul className="space-y-4">

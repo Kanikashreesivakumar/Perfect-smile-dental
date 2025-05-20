@@ -151,7 +151,6 @@ export default function Home() {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="glow-effect">
               <Button
                 asChild
-                size="lg"
                 className="premium-button bg-white text-purple-800 hover:bg-white/90 text-lg px-8 py-6 rounded-full"
               >
                 <Link href="/appointment">
@@ -223,34 +222,27 @@ export default function Home() {
           </div>
         </div>
       </section>
+           
 
-      
-      
-      <section ref={ctaRef} className="py-24 bg-gradient-to-r from-purple-800 to-purple-600 text-white page-section">
+            <section ref={showcaseRef} className="py-24 bg-white page-section">
         <div className="container px-4 mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={isCtaInView ? { opacity: 1, y: 0 } : {}}
+            animate={isShowcaseInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className="text-center depth-layer"
-            data-speed="0.1"
+            className="text-center mb-16 depth-layer"
+            data-speed="0.05"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Smile?</h2>
-            <p className="text-xl mb-10">Schedule an appointment today and experience the difference.</p>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="glow-effect">
-              <Button
-                asChild
-                size="lg"
-                className="bg-white text-purple-800 hover:bg-white/90 text-lg px-8 py-6 rounded-full"
-              >
-                <Link href="/appointment">
-                  Book Your Appointment <ChevronRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </motion.div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Our State-of-the-Art Clinic</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Take a virtual tour of our modern facilities designed for your comfort and care.
+            </p>
           </motion.div>
+
+          <ClinicShowcase/>
         </div>
       </section>
+
     </div>
   )
 }

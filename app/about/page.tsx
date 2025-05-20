@@ -127,11 +127,11 @@ export default function AboutPage() {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-white text-primary hover:bg-white/90 dark:bg-white dark:text-primary-dark"
+                  className="bg-white text-primary hover:bg-purple/90 dark:bg-white dark:text-primary-dark"
                 >
                   <Link href="/appointment">Schedule a Consultation</Link>
                 </Button>
-                <Button asChild variant="outline" className="text-white border-white hover:bg-white/10">
+                <Button asChild variant="outline" className="bg-white text-primary hover:bg-white/90 dark:bg-white dark:text-primary-dark">
                   <Link href="/about/experience">
                     Our Experience <ChevronRight className="ml-1 h-4 w-4" />
                   </Link>
@@ -353,24 +353,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-primary text-white dark:bg-primary-dark">
-        <div className="container px-4 mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Join Our Dental Family</h2>
-            <p className="text-lg mb-8 text-white/90">
-              Experience the Perfect Smile difference. Schedule your first appointment today.
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90 dark:bg-white dark:text-primary-dark"
-            >
-              <Link href="/appointment">Book Your Appointment</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+   
     </div>
   )
 }
