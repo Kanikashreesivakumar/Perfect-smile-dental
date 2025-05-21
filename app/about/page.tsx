@@ -100,7 +100,7 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen pt-20">
-      {/* Hero Section */}
+      
       <section
         ref={heroRef}
         className="relative py-20 bg-gradient-to-r from-primary to-primary-light dark:from-primary-dark dark:to-primary"
@@ -123,17 +123,29 @@ export default function AboutPage() {
                 With our team of experienced specialists and commitment to the latest technology, we deliver
                 personalized treatment plans that address your unique dental needs and goals.
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-row items-center space-x-4">
                 <Button
                   asChild
                   size="lg"
-                  className="bg-white text-primary hover:bg-purple/90 dark:bg-white dark:text-primary-dark"
+                  className="bg-white text-primary hover:bg-white/80 hover:text-primary/80 transition-colors duration-200 shadow-md whitespace-nowrap"
                 >
-                  <Link href="/appointment">Schedule a Consultation</Link>
+                  <Link 
+                    href="/about/appointment" 
+                    className="flex items-center w-full h-full px-6 py-3"
+                  >
+                    Schedule a Consultation
+                  </Link>
                 </Button>
-                <Button asChild variant="outline" className="bg-white text-primary hover:bg-white/90 dark:bg-white dark:text-primary-dark">
-                  <Link href="/about/experience">
-                    Our Experience <ChevronRight className="ml-1 h-4 w-4" />
+                <Button 
+                  asChild 
+                  variant="outline" 
+                  className="bg-white text-primary hover:bg-primary hover:text-purple-500 transition-colors duration-200 border-2 border-primary shadow-md whitespace-nowrap"
+                >
+                  <Link 
+                    href="/about/experience" 
+                    className="flex items-center w-full h-full px-6 py-3 "
+                  >
+                    Our Experience <ChevronRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>

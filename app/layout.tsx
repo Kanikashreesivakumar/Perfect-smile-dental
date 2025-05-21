@@ -16,8 +16,12 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Perfect Smile | Multi Speciality Dental Care",
-  description: "Experience the future of dental care with our state-of-the-art technology and premium services.",
+  title: "Perfect Smile Dental Clinic",
+  description: "Professional dental care services for a perfect smile",
+  icons: {
+    icon: "/images/tooth-logo.png",
+    apple: "/images/tooth-logo.png",
+  }
 }
 
 export default function RootLayout({

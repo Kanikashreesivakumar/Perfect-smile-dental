@@ -100,7 +100,7 @@ export default function ServicesPage() {
         ref={heroRef}
         className="relative py-32 overflow-hidden"
         style={{
-          backgroundImage: "url('/images/services/services-hero-bg.jpg')",
+          backgroundImage: "url('/images/service.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

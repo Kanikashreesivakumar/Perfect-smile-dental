@@ -16,14 +16,13 @@ export function ScrollProvider({ children }: { children: ReactNode }) {
   const layers = useRef<HTMLElement[]>([])
 
   useEffect(() => {
-    // Find all sections and layers
     sections.current = Array.from(document.querySelectorAll(".page-section"))
     layers.current = Array.from(document.querySelectorAll(".depth-layer"))
 
     const handleScroll = () => {
       scrollY.current = window.scrollY
 
-      // Apply 3D effect to sections
+
       sections.current.forEach((section) => {
         const rect = section.getBoundingClientRect()
         const centerY = rect.top + rect.height / 2
@@ -32,11 +31,11 @@ export function ScrollProvider({ children }: { children: ReactNode }) {
         const maxDistance = viewportHeight / 2
         const normalizedDistance = Math.max(-1, Math.min(1, distanceFromCenter / maxDistance))
 
-        // Apply rotation based on scroll position
+     
         section.style.transform = `perspective(1000px) rotateX(${normalizedDistance * 5}deg)`
       })
 
-      // Apply parallax effect to layers
+
       layers.current.forEach((layer) => {
         const speed = Number.parseFloat(layer.getAttribute("data-speed") || "0.1")
         const yPos = -scrollY.current * speed
@@ -45,7 +44,7 @@ export function ScrollProvider({ children }: { children: ReactNode }) {
     }
 
     window.addEventListener("scroll", handleScroll)
-    handleScroll() // Initial call
+    handleScroll() 
 
     return () => {
       window.removeEventListener("scroll", handleScroll)

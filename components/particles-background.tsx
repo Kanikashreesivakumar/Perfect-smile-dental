@@ -15,7 +15,7 @@ interface Particle {
 export default function ParticlesBackground() {
   const containerRef = useRef<HTMLDivElement>(null)
   const particlesRef = useRef<Particle[]>([])
-  const animationRef = useRef<number>()
+  const animationRef = useRef<number | undefined>(undefined)
 
   useEffect(() => {
     if (!containerRef.current) return
@@ -25,7 +25,7 @@ export default function ParticlesBackground() {
     const particleCount = 30
     const maxSize = 8
 
-    // Create particles
+  
     for (let i = 0; i < particleCount; i++) {
       const size = Math.random() * maxSize + 2
       const x = Math.random() * window.innerWidth
@@ -58,14 +58,13 @@ export default function ParticlesBackground() {
 
     particlesRef.current = particles
 
-    // Animation function
     const animate = () => {
       particles.forEach((particle) => {
-        // Update position
+       
         particle.x += particle.speedX
         particle.y += particle.speedY
 
-        // Boundary check
+     
         if (particle.x < 0 || particle.x > window.innerWidth) {
           particle.speedX *= -1
         }

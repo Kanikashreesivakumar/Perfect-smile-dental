@@ -36,34 +36,34 @@ export default function Footer() {
                 />
               </div>
             </div>
-            <p className="text-gray-600 mb-6">
+            <p className="text-black mb-6">
               Providing exceptional dental care with a gentle touch. Your perfect smile is our priority.
             </p>
             <div className="flex space-x-4">
               <Link
                 href="#"
-                className="text-gray-400 hover:text-primary transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200"
+                className="text-black hover:text-primary transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200"
               >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
                 href="#"
-                className="text-gray-400 hover:text-primary transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200"
+                className="text-black hover:text-primary transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200"
               >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
               <Link
                 href="#"
-                className="text-gray-400 hover:text-primary transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200"
+                className="text-black hover:text-primary transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200"
               >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
               <Link
                 href="#"
-                className="text-gray-400 hover:text-primary transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200"
+                className="text-black hover:text-primary transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
@@ -75,45 +75,44 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-6 text-gray-900">Quick Links</h3>
             <ul className="space-y-4">
               <li>
-                <Link href="/" className="text-gray-600 hover:text-primary transition-colors">
+                <Link href="/" className="text-black hover:text-primary transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-600 hover:text-primary transition-colors">
+                <Link href="/services" className="text-black hover:text-primary transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-600 hover:text-primary transition-colors">
+                <Link href="/about" className="text-black hover:text-primary transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-600 hover:text-primary transition-colors">
+                <Link href="/contact" className="text-black hover:text-primary transition-colors">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/appointment" className="text-gray-600 hover:text-primary transition-colors">
+                <Link href="/appointment" className="text-black hover:text-primary transition-colors">
                   Book Appointment
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-600 hover:text-primary transition-colors">
+                <Link href="#" className="text-black hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="font-semibold text-lg mb-6 text-gray-900">Contact Info</h3>
             <ul className="space-y-4">
               <li className="flex">
                 <MapPin className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
-                <span className="text-gray-600">
+                <span className="text-black">
                   123 Dental Avenue, Suite 200
                   <br />
                   New York, NY 10001
@@ -121,15 +120,15 @@ export default function Footer() {
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
-                <span className="text-gray-600">(212) 555-1234</span>
+                <span className="text-black">(212) 555-1234</span>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
-                <span className="text-gray-600">info@perfectsmile.com</span>
+                <span className="text-black">info@perfectsmile.com</span>
               </li>
               <li className="flex">
                 <Clock className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
-                <div className="text-gray-600">
+                <div className="text-black">
                   <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
                   <p>Saturday: 9:00 AM - 2:00 PM</p>
                   <p>Sunday: Closed</p>
@@ -138,10 +137,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter */}
+         
           <div>
-            <h3 className="font-semibold text-lg mb-6 text-gray-900">Newsletter</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="font-semibold text-lg mb-6 text-black">Newsletter</h3>
+            <p className="text-black mb-6">
               Subscribe to our newsletter for tips on dental health and special offers.
             </p>
             <form className="space-y-3">
@@ -163,14 +162,11 @@ export default function Footer() {
             © {currentYear} Perfect Smile Dental Clinic. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <Link href="#" className="text-gray-500 hover:text-primary transition-colors text-sm">
+            <Link href="/terms-of-service" className="text-gray-500 hover:text-primary transition-colors text-sm">
               Terms of Service
             </Link>
-            <Link href="#" className="text-gray-500 hover:text-primary transition-colors text-sm">
+            <Link href="/privacy-policy" className="text-gray-500 hover:text-primary transition-colors text-sm">
               Privacy Policy
-            </Link>
-            <Link href="#" className="text-gray-500 hover:text-primary transition-colors text-sm">
-              Cookie Policy
             </Link>
           </div>
         </div>

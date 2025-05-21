@@ -34,7 +34,7 @@ export default function FloatingElements() {
     <div ref={containerRef} className="absolute inset-0 overflow-hidden pointer-events-none z-[5]">
       {/* Tooth */}
       <motion.div
-        className="absolute top-[15%] left-[10%] w-16 h-16 md:w-24 md:h-24 parallax-element"
+        className="absolute top-[20%] left-[10%] w-16 h-16 md:w-24 md:h-24 parallax-element"
         data-speed="0.05"
         animate={{
           y: [0, -20, 0],
@@ -47,7 +47,7 @@ export default function FloatingElements() {
         }}
       >
         <Image
-          src="/images/tooth-icon.png"
+          src="/images/hos.svg"
           alt="Floating tooth"
           width={100}
           height={100}
@@ -57,7 +57,7 @@ export default function FloatingElements() {
 
       {/* Toothbrush */}
       <motion.div
-        className="absolute bottom-[20%] right-[15%] w-16 h-16 md:w-24 md:h-24 parallax-element"
+        className="absolute bottom-[20%] right-[10%] w-16 h-16 md:w-24 md:h-24 parallax-element"
         data-speed="0.08"
         animate={{
           y: [0, 20, 0],
@@ -71,7 +71,7 @@ export default function FloatingElements() {
         }}
       >
         <Image
-          src="/images/brush-icon.png"
+          src="/images/chair.svg"
           alt="Floating brush"
           width={100}
           height={100}
@@ -79,9 +79,9 @@ export default function FloatingElements() {
         />
       </motion.div>
 
-      {/* DNA Molecule */}
+    
       <motion.div
-        className="absolute top-[40%] right-[25%] w-12 h-12 md:w-16 md:h-16 parallax-element"
+        className="absolute top-[15%] right-[15%] w-12 h-12 md:w-16 md:h-16 parallax-element"
         data-speed="0.1"
         animate={{
           y: [0, -15, 0],
@@ -104,9 +104,9 @@ export default function FloatingElements() {
         </div>
       </motion.div>
 
-      {/* Dental Floss */}
+      
       <motion.div
-        className="absolute bottom-[30%] left-[20%] w-10 h-10 md:w-14 md:h-14 parallax-element"
+        className="absolute bottom-[30%] left-[10%] w-10 h-10 md:w-14 md:h-14 parallax-element"
         data-speed="0.07"
         animate={{
           y: [0, 15, 0],
@@ -121,26 +121,47 @@ export default function FloatingElements() {
         }}
       >
         <div className="relative w-full h-full rounded-full bg-purple-100 flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="w-8 h-8 text-purple-500 opacity-70"
-          >
-            {/* Tooth icon SVG */}
-            <path d="M12 2C7.5 2 5 5.5 5 9c0 4.5 2.5 9 7 13 4.5-4 7-8.5 7-13 0-3.5-2.5-7-7-7zm0 2c3.3 0 5 2.7 5 5 0 3.5-2.2 7.2-5 10.7C9.2 16.2 7 12.5 7 9c0-2.3 1.7-5 5-5z" />
-          </svg>
+          <Image
+            src="/images/dental-tool.svg"
+            alt="Molar tooth"
+            width={32}
+            height={32}
+            className="text-purple-500 opacity-70"
+          />
         </div>
       </motion.div>
 
-      {/* Light flare 1 */}
+
+      <motion.div
+        className="absolute top-[40%] right-[15%] w-10 h-10 md:w-14 md:h-14 parallax-element"
+        data-speed="0.09"
+        animate={{
+          y: [0, -15, 0],
+          x: [0, 10, 0],
+          rotate: [0, 360, 0],
+        }}
+        transition={{
+          duration: 6,
+          repeat: Number.POSITIVE_INFINITY,
+          ease: "easeInOut",
+          delay: 1,
+        }}
+      >
+        <div className="relative w-full h-full rounded-full bg-purple-100 flex items-center justify-center">
+          <Image
+            src="/images/molar.svg"
+            alt="Molar tooth"
+            width={32}
+            height={32}
+            className="text-purple-500 opacity-70"
+          />
+        </div>
+      </motion.div>
+
+      
       <div className="absolute top-[30%] left-[30%] w-40 h-40 rounded-full bg-purple-400/20 blur-3xl"></div>
 
-      {/* Light flare 2 */}
+   
       <div className="absolute bottom-[20%] right-[30%] w-60 h-60 rounded-full bg-purple-300/20 blur-3xl"></div>
     </div>
   )
