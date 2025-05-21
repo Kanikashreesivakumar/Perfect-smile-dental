@@ -81,8 +81,8 @@ export default function Navbar() {
                   pathname === link.href
                     ? "bg-purple-100 text-purple-800"
                     : isScrolled || pathname !== "/"
-                      ? "text-black hover:bg-gray-100" // Changed from text-gray-700 to text-black
-                      : "text-black hover:bg-white/10" // Changed from text-white/90 to text-black
+                      ? "text-black hover:bg-gray-100" 
+                      : "text-black hover:bg-white/10" 
                 )}
               >
                 {link.label}
@@ -90,7 +90,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Right Side Actions */}
+         
           <div className="flex items-center space-x-2">
             <Button asChild size="sm" className="hidden sm:flex premium-button text-black rounded-full">
               <Link href="/appointment">Book Appointment</Link>

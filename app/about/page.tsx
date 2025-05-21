@@ -130,8 +130,8 @@ export default function AboutPage() {
                   className="bg-white text-primary hover:bg-white/80 hover:text-primary/80 transition-colors duration-200 shadow-md whitespace-nowrap"
                 >
                   <Link 
-                    href="/about/appointment" 
-                    className="flex items-center w-full h-full px-6 py-3"
+                   href="/appointment" 
+                   className="text-black hover:text-primary transition-colors"
                   >
                     Schedule a Consultation
                   </Link>
@@ -142,7 +142,7 @@ export default function AboutPage() {
                   className="bg-white text-primary hover:bg-primary hover:text-purple-500 transition-colors duration-200 border-2 border-primary shadow-md whitespace-nowrap"
                 >
                   <Link 
-                    href="/about/experience" 
+                    href="/about/ex" 
                     className="flex items-center w-full h-full px-6 py-3 "
                   >
                     Our Experience <ChevronRight className="ml-2 h-5 w-5" />
@@ -183,83 +183,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Values */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="container px-4 mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Core Values</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              These principles guide everything we do at Perfect Smile Dental Clinic.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="bg-primary/10 dark:bg-primary-dark/10">
-                <CardTitle>Excellence</CardTitle>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <p>
-                  We strive for excellence in every aspect of our practice, from clinical skills to patient
-                  communication.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="bg-primary/10 dark:bg-primary-dark/10">
-                <CardTitle>Compassion</CardTitle>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <p>
-                  We treat each patient with genuine care and empathy, understanding dental anxiety and individual
-                  needs.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="bg-primary/10 dark:bg-primary-dark/10">
-                <CardTitle>Innovation</CardTitle>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <p>We continuously invest in advanced technology and techniques to provide the best possible care.</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="bg-primary/10 dark:bg-primary-dark/10">
-                <CardTitle>Integrity</CardTitle>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <p>
-                  We maintain the highest ethical standards and always recommend what's truly best for our patients.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="bg-primary/10 dark:bg-primary-dark/10">
-                <CardTitle>Education</CardTitle>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <p>We believe in empowering patients with knowledge about their oral health and treatment options.</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="bg-primary/10 dark:bg-primary-dark/10">
-                <CardTitle>Community</CardTitle>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <p>We're committed to serving our local community and making quality dental care accessible to all.</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Team */}
+     
       <section ref={teamRef} className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container px-4 mx-auto">
           <div className="text-center mb-16">

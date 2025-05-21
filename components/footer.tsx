@@ -120,7 +120,7 @@ export default function Footer() {
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
-                <span className="text-black">(212) 555-1234</span>
+                <span className="text-black">+91 </span>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
