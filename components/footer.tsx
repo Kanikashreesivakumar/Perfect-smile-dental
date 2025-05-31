@@ -149,15 +149,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-100 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm mb-4 md:mb-0">
+        <div className="border-t border-black mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-black text-sm mb-4 md:mb-0">
             © {currentYear} Perfect Smile Dental Clinic. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <Link href="/terms-of-service" className="text-gray-500 hover:text-primary transition-colors text-sm">
+            <Link href="/terms-of-service" className="text-black hover:text-primary transition-colors text-sm">
               Terms of Service
             </Link>
-            <Link href="/privacy-policy" className="text-gray-500 hover:text-primary transition-colors text-sm">
+            <Link href="/privacy-policy"  className="text-black hover:text-primary transition-colors text-sm">
               Privacy Policy
             </Link>
           </div>

@@ -95,7 +95,7 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen pt-20">
-      {/* Hero Section with Background Image */}
+     
       <section
         ref={heroRef}
         className="relative py-32 overflow-hidden"
@@ -175,26 +175,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary-light text-white relative">
-        <div className="absolute inset-0 bg-[url('/images/tech-pattern.png')] opacity-10"></div>
-        <div className="container px-4 mx-auto relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Smile?</h2>
-            <p className="text-xl mb-8 text-white/90">
-              Our team of specialists is ready to provide you with the highest quality dental care using the latest
-              technology.
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="premium-button bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 rounded-full"
-            >
-              <Link href="/appointment">Schedule Your Consultation</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+     
     </div>
   )
 }

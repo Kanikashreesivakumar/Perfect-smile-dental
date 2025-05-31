@@ -96,13 +96,18 @@ export default function Navbar() {
               <Link href="/appointment">Book Appointment</Link>
             </Button>
 
-            <Button asChild size="icon" variant="outline" className="hidden sm:flex">
-              <Link href="tel:+12125551234">
+            <Button 
+              asChild 
+              size="icon" 
+              variant="outline" 
+              className="hidden sm:flex bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-black border-none transition-all duration-200"
+            >
+              <Link href="tel:+917418761589">
                 <Phone className="h-4 w-4" />
               </Link>
             </Button>
 
-            {/* Mobile Menu Trigger */}
+          
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="md:hidden">
@@ -171,10 +176,14 @@ export default function Navbar() {
                         Book Appointment
                       </Link>
                     </Button>
-                    <Button asChild variant="outline" className="w-full">
-                      <Link href="tel:+12125551234" onClick={() => setIsOpen(false)}>
+                    <Button 
+                      asChild 
+                      variant="outline" 
+                      className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white border-none transition-all duration-200"
+                    >
+                      <Link href="tel:+917418761589" onClick={() => setIsOpen(false)}>
                         <Phone className="h-4 w-4 mr-2" />
-                        (212) 555-1234
+                        +91 7418761589
                       </Link>
                     </Button>
                   </div>
