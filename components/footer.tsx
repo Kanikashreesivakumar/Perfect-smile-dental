@@ -113,26 +113,18 @@ export default function Footer() {
               <li className="flex">
                 <MapPin className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
                 <span className="text-black">
-                  123 Dental Avenue, Suite 200
+                  456 Dental Drive
                   <br />
-                  New York, NY 10001
+                  Bangalore, KA 560001
                 </span>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
-                <span className="text-black">+91 </span>
+                <span className="text-black">+91 80 4567 8900</span>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
-                <span className="text-black">info@perfectsmile.com</span>
-              </li>
-              <li className="flex">
-                <Clock className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
-                <div className="text-black">
-                  <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
-                  <p>Saturday: 9:00 AM - 2:00 PM</p>
-                  <p>Sunday: Closed</p>
-                </div>
+                <span className="text-black">contact@perfectsmile.com</span>
               </li>
             </ul>
           </div>
