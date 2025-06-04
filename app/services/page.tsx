@@ -105,14 +105,14 @@ export default function ServicesPage() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary-light/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/50 to-primary-light/30"></div>
         <div className="container px-4 mx-auto relative z-10">
           <div className="max-w-3xl mx-auto text-center text-white">
             <motion.h1
-              initial={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 10, y: -20 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
-              className="text-5xl md:text-6xl font-bold mb-6"
+              className="text-5xl md:text-6xl font-bold text-black mb-6"
             >
               Our Premium Dental Services
             </motion.h1>
@@ -120,7 +120,7 @@ export default function ServicesPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl md:text-2xl mb-8"
+              className="text-xl md:text-2xl mb-8 text-black"
             >
               Experience exceptional care with our comprehensive range of advanced dental treatments
             </motion.p>
@@ -128,7 +128,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services Grid */}
+      
       <section ref={servicesRef} className="py-20 bg-white">
         <div className="container px-4 mx-auto">
           <div className="space-y-24">

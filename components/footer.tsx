@@ -99,11 +99,7 @@ export default function Footer() {
                   Book Appointment
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="text-black hover:text-primary transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
+              
             </ul>
           </div>
 
@@ -113,18 +109,18 @@ export default function Footer() {
               <li className="flex">
                 <MapPin className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
                 <span className="text-black">
-                  456 Dental Drive
+                  456 , mayura complex, Bhavani
                   <br />
-                  Bangalore, KA 560001
+                  Erode, Tamilnadu -638301
                 </span>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
-                <span className="text-black">+91 80 4567 8900</span>
+                <span className="text-black">+91 8056781666</span>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-3 text-primary flex-shrink-0" />
-                <span className="text-black">contact@perfectsmile.com</span>
+                <span className="text-black">perfectsmile@gmail.com</span>
               </li>
             </ul>
           </div>

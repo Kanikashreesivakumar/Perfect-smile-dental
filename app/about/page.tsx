@@ -158,7 +158,7 @@ export default function AboutPage() {
             >
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/images/clinic-interior.jpg"
+                  src="/images/service.jpg"
                   alt="Perfect Smile Dental Clinic"
                   fill
                   className="object-cover"

@@ -25,13 +25,13 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Form submission logic would go here
+   
     alert("Your message has been sent. We'll get back to you soon!")
   }
 
   return (
     <div className="min-h-screen pt-20">
-      {/* Hero Section */}
+     
       <section className="relative py-20 bg-gradient-to-r from-primary to-primary-light dark:from-primary-dark dark:to-primary">
         <div className="absolute inset-0 bg-[url('/images/contact/contact-bg.png')] opacity-20 mix-blend-overlay"></div>
         <div className="container px-4 mx-auto">
@@ -70,11 +70,11 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Info & Form */}
+  
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container px-4 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
+           
             <motion.div
               ref={infoRef}
               initial={{ opacity: 0, x: -50 }}
@@ -90,9 +90,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Our Location</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        123 Dental Avenue, Suite 200
-                        <br />
-                        New York, NY 10001
+                   456 , mayura complex, Bhavani
+                  <br />
+                  Erode, Tamilnadu -638301
                       </p>
                     </div>
                   </CardContent>
@@ -104,9 +104,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Phone</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        (212) 555-1234
+                       +91 8056781666
                         <br />
-                        Emergency: (212) 555-5678
+                        Emergency:8056781666
                       </p>
                     </div>
                   </CardContent>
@@ -118,7 +118,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Email</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        info@perfectsmile.com
+                        perfectsmile@gmail.com
                         <br />
                         appointments@perfectsmile.com
                       </p>
@@ -133,9 +133,9 @@ export default function ContactPage() {
                       <h3 className="font-semibold text-lg mb-1">Hours</h3>
                       <div className="text-gray-600 dark:text-gray-300 grid grid-cols-2 gap-x-4">
                         <span>Monday - Friday:</span>
-                        <span>8:00 AM - 6:00 PM</span>
+                        <span>10:00 AM - 8:00 PM</span>
                         <span>Saturday:</span>
-                        <span>9:00 AM - 2:00 PM</span>
+                        <span>10:00 AM - 4:00 PM</span>
                         <span>Sunday:</span>
                         <span>Closed</span>
                       </div>
@@ -235,7 +235,6 @@ export default function ContactPage() {
               </div>
             </motion.div>
 
-            {/* Contact Form */}
             <motion.div
               ref={formRef}
               initial={{ opacity: 0, x: 50 }}
@@ -256,13 +255,13 @@ export default function ContactPage() {
                         <label htmlFor="name" className="text-sm font-medium">
                           Full Name
                         </label>
-                        <Input id="name" placeholder="John Doe" required />
+                        <Input id="name" placeholder="your name" required />
                       </div>
                       <div className="space-y-2">
                         <label htmlFor="email" className="text-sm font-medium">
                           Email
                         </label>
-                        <Input id="email" type="email" placeholder="john@example.com" required />
+                        <Input id="email" type="email" placeholder="yourmail@gmail.com" required />
                       </div>
                     </div>
 
@@ -270,7 +269,7 @@ export default function ContactPage() {
                       <label htmlFor="phone" className="text-sm font-medium">
                         Phone Number
                       </label>
-                      <Input id="phone" type="tel" placeholder="(123) 456-7890" />
+                      <Input id="phone" type="tel" placeholder="+91 1234567890" />
                     </div>
 
                     <div className="space-y-2">
@@ -284,7 +283,7 @@ export default function ContactPage() {
                       <label htmlFor="message" className="text-sm font-medium">
                         Message
                       </label>
-                      <Textarea id="message" placeholder="How can we help you?" rows={5} required />
+                      <Textarea id="message" placeholder="Share your queries here..!!" rows={5} required />
                     </div>
 
                     <Button type="submit" className="w-full">
@@ -298,11 +297,11 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Floating WhatsApp Button */}
+      
       <div className="fixed bottom-6 right-6 z-50">
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <Link
-            href="https://wa.me/12125551234"
+            href="https://wa.me/8056781666"
             className="flex items-center justify-center w-16 h-16 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
