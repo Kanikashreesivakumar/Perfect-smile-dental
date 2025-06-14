@@ -129,9 +129,9 @@ export default function AboutPage() {
                 >
                   <Link 
                    href="/appointment" 
-                   className="text-black hover:text-primary transition-colors"
+                   className="text-black hover:text-primary font-semibold transition-colors"
                   >
-                    Schedule a Consultation
+                  Ready to smile?
                   </Link>
                 </Button>
                 <Button 
@@ -143,7 +143,7 @@ export default function AboutPage() {
                     href="/about/ex" 
                     className="flex items-center w-full h-full px-6 py-3 "
                   >
-                    Our Experience <ChevronRight className="ml-2 h-5 w-5" />
+                    More than just Dentist<ChevronRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
@@ -185,10 +185,9 @@ export default function AboutPage() {
       <section ref={teamRef} className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container px-4 mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Meet Our Team</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Our experienced dental professionals are dedicated to providing you with the highest quality care.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">OUR DENTAL FAMILY</h2>
+            <p className="text-lg text-gray-600 font-semibold dark:text-gray-300 max-w-2xl mx-auto">
+              Where every smile is treated like family </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -215,8 +214,8 @@ export default function AboutPage() {
                   <CardContent>
                     <Tabs defaultValue="bio">
                       <TabsList className="grid w-full grid-cols-2">
-                        <TabsTrigger value="bio">Bio</TabsTrigger>
-                        <TabsTrigger value="credentials">Credentials</TabsTrigger>
+                        <TabsTrigger value="bio">Meet DR.</TabsTrigger>
+                        <TabsTrigger value="credentials">Years of Trusted Care</TabsTrigger>
                       </TabsList>
                       <TabsContent value="bio" className="mt-4">
                         <p className="text-sm text-gray-600 dark:text-gray-300">{member.bio}</p>
@@ -240,18 +239,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
       <section ref={timelineRef} className="py-20 bg-white dark:bg-gray-900">
         <div className="container px-4 mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Journey</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Milestones in Care</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              The evolution of Perfect Smile Dental Clinic over the years.
+              Each milestone marked not by years, but by the smiles we’ve earned
             </p>
           </div>
 
           <div className="relative">
-            {/* Timeline line */}
+            
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary/30 dark:bg-primary-dark/30"></div>
 
             <div className="space-y-12">
