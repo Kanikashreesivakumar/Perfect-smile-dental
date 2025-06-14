@@ -114,14 +114,12 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
               className="lg:w-1/2 text-white"
             >
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">About Perfect Smile</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">About our perfect smile</h1>
               <p className="text-lg mb-6">
-                At Perfect Smile, we believe everyone deserves a healthy, beautiful smile. Our mission is to provide
-                exceptional dental care in a comfortable, state-of-the-art environment.
+                Your Smile, Perfected with Care.
               </p>
               <p className="text-lg mb-8">
-                With our team of experienced specialists and commitment to the latest technology, we deliver
-                personalized treatment plans that address your unique dental needs and goals.
+              From routine checkups to complete smile makeovers — we make dental visits feel less like appointments and more like self-care. At Perfect Smile, you're not just a patient — you're family.
               </p>
               <div className="flex flex-row items-center space-x-4">
                 <Button
