@@ -24,7 +24,7 @@ export default function ServicesPage() {
       description:
         "Our professional whitening treatments use the latest LED-activated technology to remove deep stains and discoloration. The procedure is gentle on enamel while delivering dramatic results that last. We customize each treatment to your specific needs, ensuring optimal brightness without sensitivity.",
       icon: "tooth-brush",
-      price: "From $299",
+        price: "From 800",
       image: "/images/services/teeth-whitening.png",
     },
     {
@@ -32,7 +32,7 @@ export default function ServicesPage() {
       description:
         "Our dental implants provide a permanent solution for missing teeth with a success rate of over 98%. Using 3D imaging and computer-guided placement, we ensure perfect positioning and integration with your natural bone. The result is a restoration that looks, feels, and functions exactly like your natural teeth.",
       icon: "tooth-implant",
-      price: "From $1,800",
+        price: "From 800",
       image: "/images/services/dental-implants.jpg",
     },
     {
@@ -40,7 +40,7 @@ export default function ServicesPage() {
       description:
         "Transform your smile with our invisible aligners and aesthetic braces. Our AI-powered treatment planning creates a digital model of your perfect smile before treatment begins. We offer clear aligners, ceramic braces, and traditional options, all with accelerated treatment times thanks to our proprietary technology.",
       icon: "braces",
-      price: "From $3,500",
+      price: "From 3,500",
       image: "/images/services/orthodontics.png",
     },
     {
@@ -48,7 +48,7 @@ export default function ServicesPage() {
       description:
         "Our advanced root canal therapy uses rotary endodontics and 3D imaging for precision treatment. Combined with our specialized anesthesia protocol, the procedure is completely comfortable with minimal recovery time. We preserve your natural tooth while eliminating infection and pain.",
       icon: "root-canal",
-      price: "From $800",
+      price: "From 800",
       image: "/images/services/root-canal.png",
     },
     {
@@ -56,7 +56,7 @@ export default function ServicesPage() {
       description:
         "Our cosmetic procedures include porcelain veneers, bonding, and complete smile makeovers. Our dentists are trained in aesthetic principles to create natural, harmonious results. We use digital smile design to preview your results and high-quality porcelain materials that resist staining and look indistinguishable from natural teeth.",
       icon: "cosmetic",
-      price: "From $500",
+      price: "From 500",
       image: "/images/services/cosmetic-dentistry.png",
     },
     {
@@ -64,7 +64,7 @@ export default function ServicesPage() {
       description:
         "Our preventive care program includes comprehensive exams with oral cancer screening, advanced digital x-rays with minimal radiation, professional cleanings, and personalized home care plans. We use AI-assisted cavity detection to identify problems at their earliest stages.",
       icon: "prevention",
-      price: "From $150",
+      price: "From 150",
       image: "/images/services/preventive-care.png",
     },
     {
@@ -72,7 +72,7 @@ export default function ServicesPage() {
       description:
         "Our child-friendly environment makes dental visits fun and educational. We use gentle techniques specifically designed for children's comfort. Our preventive approach includes sealants, fluoride treatments, and education to establish healthy habits early. We create positive associations with dental care that last a lifetime.",
       icon: "pediatric",
-      price: "From $120",
+      price: "From 120",
       image: "/images/services/pediatric-dentistry.png",
     },
     {
@@ -80,7 +80,7 @@ export default function ServicesPage() {
       description:
         "Our comprehensive gum disease treatments range from deep cleaning to advanced laser therapy for severe cases. We use antimicrobial treatments and host modulation to control infection and promote healing. Our maintenance program prevents recurrence and protects your overall health.",
       icon: "periodontal",
-      price: "From $300",
+      price: "From 300",
       image: "/images/services/periodontal.png",
     },
     {
@@ -88,7 +88,7 @@ export default function ServicesPage() {
       description:
         "Our same-day crown technology creates perfectly fitted restorations in a single visit. We use high-strength ceramics that blend seamlessly with your natural teeth. Our digital impression system eliminates uncomfortable traditional molds while providing superior accuracy for a perfect fit.",
       icon: "crown",
-      price: "From $950",
+      price: "From 950",
       image: "/images/services/crowns-bridges.jpg",
     },
   ]
