@@ -114,15 +114,15 @@ export default function ServicesPage() {
               transition={{ duration: 0.6 }}
               className="text-5xl md:text-6xl font-bold text-black mb-6"
             >
-              Our Premium Dental Services
+              Care That Goes Beyond the Smile
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl md:text-2xl mb-8 text-black"
+              className="text-xl md:text-2xl font-semibold mb-8 text-black"
             >
-              Experience exceptional care with our comprehensive range of advanced dental treatments
+              From routine check-ups to advanced treatments, we offer personalized dental solutions designed with comfort, precision, and lasting results.
             </motion.p>
           </div>
         </div>

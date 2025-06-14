@@ -214,8 +214,8 @@ export default function AboutPage() {
                   <CardContent>
                     <Tabs defaultValue="bio">
                       <TabsList className="grid w-full grid-cols-2">
-                        <TabsTrigger value="bio">Meet DR.</TabsTrigger>
-                        <TabsTrigger value="credentials">Years of Trusted Care</TabsTrigger>
+                        <TabsTrigger value="bio">DR</TabsTrigger>
+                        <TabsTrigger value="credentials">Trusted Care</TabsTrigger>
                       </TabsList>
                       <TabsContent value="bio" className="mt-4">
                         <p className="text-sm text-gray-600 dark:text-gray-300">{member.bio}</p>

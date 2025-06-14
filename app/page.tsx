@@ -129,11 +129,11 @@ export default function Home() {
             className="max-w-3xl text-center mx-auto text-white"
           >
             <h1 className="text-3xl md:text-4xl font-bold mb-12 drop-shadow-lg text-black">
-              Transforming Smiles, Changing Lives
+           Crafting Confident Smiles, One Visit at a Time
             </h1>
             <p className="text-xl md:text-2xl mb-12 text-black font-semibold drop-shadow-md">
-              Experience exceptional dental care with our team of experts using cutting-edge technology for your comfort
-              and satisfaction.
+             Discover dental care that’s built around you — blending expert hands, genuine compassion, and modern technology to make every visit feel reassuring and rewarding.
+
             </p>
             
               <Button
@@ -151,10 +151,13 @@ export default function Home() {
       <section ref={featuresRef} className="py-24 bg-white">
         <div className="container px-4 mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Our Perfect Smile</h2>
-            <p className="text-xl text-black max-w-3xl mx-auto">
-              We've reimagined what a dental visit can be, combining clinical excellence with exceptional comfort.
-            </p>
+           <h2 className="text-3xl md:text-5xl font-bold mb-5 gradient-text">
+  Where Confidence Begins with a Smile
+</h2>
+<p className="text-xl text-black max-w-3xl mx-auto">
+  At Perfect Smile, we don’t just treat teeth — we care for people. From the moment you walk in, our focus is on comfort, compassion, and creating smiles that truly reflect you.
+</p>
+
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -194,9 +197,9 @@ export default function Home() {
             className="text-center mb-16 depth-layer"
             data-speed="0.05"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Our State-of-the-Art Clinic</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text"> Step Inside Comfort-Centered Dentistry</h2>
             <p className="text-xl text-black max-w-3xl mx-auto">
-              Take a virtual tour of our modern facilities designed for your comfort and care.
+              Explore a space where innovation meets relaxation — thoughtfully designed to make every visit feel calm, modern, and truly patient-first.
             </p>
           </motion.div>
 
