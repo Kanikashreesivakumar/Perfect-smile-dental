@@ -32,15 +32,15 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen pt-20">
      
-      <section className="relative py-20 bg-gradient-to-r from-primary to-primary-light dark:from-primary-dark dark:to-primary">
-        <div className="absolute inset-0 bg-[url('/images/contact/contact-bg.png')] opacity-20 mix-blend-overlay"></div>
-        <div className="container px-4 mx-auto">
+      <section className="relative py-12 sm:py-20 bg-gradient-to-r from-primary to-primary-light dark:from-primary-dark dark:to-primary">
+        <div className="absolute inset-0 bg-[url('/images/contact/contact-bg.png')] opacity-20 mix-blend-overlay bg-cover bg-center"></div>
+        <div className="container px-4 mx-auto relative z-10">
           <div className="max-w-3xl mx-auto text-center text-white">
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl md:text-5xl font-bold mb-6"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6"
             >
               Contact Us
             </motion.h1>
@@ -48,7 +48,7 @@ export default function ContactPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg md:text-xl mb-8"
+              className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 px-2 sm:px-4 max-w-xl mx-auto"
             >
               We're here to answer your questions and help you schedule your appointment.
             </motion.p>
@@ -56,7 +56,7 @@ export default function ContactPage() {
         </div>
         <div className="absolute bottom-0 left-0 w-full overflow-hidden">
           <svg
-            className="relative block w-full h-12 md:h-16"
+            className="relative block w-full h-8 sm:h-12 md:h-16"
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1200 120"
