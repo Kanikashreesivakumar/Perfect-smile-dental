@@ -26,36 +26,20 @@ export default function AboutPage() {
   })
 
   const team = [
+ 
+    
     {
-      name: "Dr. Sarah Johnson",
-      role: "Lead Dentist & Founder",
-      image: "/images/sab.png",
-      bio: "Dr. Johnson has over 15 years of experience in cosmetic and restorative dentistry. She graduated from Harvard Dental School and is committed to providing the highest quality care.",
-      credentials: ["DDS, Harvard University", "American Dental Association", "Academy of Cosmetic Dentistry"],
-    },
-    {
-      name: "Dr. Michael Chen",
-      role: "Orthodontist",
-      image: "/images/sab.png",
-      bio: "Dr. Chen specializes in orthodontics and is an expert in modern braces and clear aligner treatments. He is dedicated to creating beautiful, straight smiles for patients of all ages.",
-      credentials: [
-        "DMD, University of Pennsylvania",
-        "American Association of Orthodontists",
-        "Board Certified Orthodontist",
-      ],
-    },
-    {
-      name: "Dr. Emily Rodriguez",
+      name: "Dr.tamil selvan",
       role: "Pediatric Dentist",
       image: "/images/sab.png",
-      bio: "Dr. Rodriguez loves working with children and making dental visits fun and stress-free. She has a special way with young patients that puts them at ease.",
+      bio: "Dr. tamil selvan loves working with children and making dental visits fun and stress-free. She has a special way with young patients that puts them at ease.",
       credentials: ["DDS, UCLA", "American Academy of Pediatric Dentistry", "Board Certified Pediatric Dentist"],
     },
     {
-      name: "Dr. James Wilson",
+      name: "Dr.Anvisha",
       role: "Periodontist",
       image: "/images/sab.png",
-      bio: "Dr. Wilson is our gum health specialist with expertise in treating periodontal disease and performing gum surgeries with minimal discomfort.",
+      bio: "Dr.anvi is our gum health specialist with expertise in treating periodontal disease and performing gum surgeries with minimal discomfort.",
       credentials: [
         "DMD, Boston University",
         "American Academy of Periodontology",
@@ -122,30 +106,22 @@ export default function AboutPage() {
               From routine checkups to complete smile makeovers — we make dental visits feel less like appointments and more like self-care. At Perfect Smile, you're not just a patient — you're family.
               </p>
               <div className="flex flex-row items-center space-x-4">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/80 hover:text-primary/80 transition-colors duration-200 shadow-md whitespace-nowrap"
-                >
-                  <Link 
-                   href="/appointment" 
-                   className="text-black hover:text-primary font-semibold transition-colors"
+                <Link href="/appointment">
+                  <Button
+                    size="lg"
+                    className="bg-white text-primary hover:bg-white/80 hover:text-primary/80 transition-colors duration-200 shadow-md whitespace-nowrap"
                   >
-                  Ready to smile?
-                  </Link>
-                </Button>
-                <Button 
-                  asChild 
-                  variant="outline" 
-                  className="bg-white text-primary hover:bg-primary hover:text-purple-500 transition-colors duration-200 border-2 border-primary shadow-md whitespace-nowrap"
-                >
-                  <Link 
-                    href="/about/ex" 
-                    className="flex items-center w-full h-full px-6 py-3 "
+                    Ready to smile?
+                  </Button>
+                </Link>
+                <Link href="/about/experience">
+                  <Button 
+                    variant="outline" 
+                    className="bg-white text-primary hover:bg-primary hover:text-white transition-colors duration-200 border-2 border-primary shadow-md whitespace-nowrap flex items-center px-6 py-3"
                   >
-                    More than just Dentist<ChevronRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
+                    More than just Dentist<ChevronRight className="ml-2 h-5 w-5"/>
+                  </Button>
+                </Link>
               </div>
             </motion.div>
             <motion.div
