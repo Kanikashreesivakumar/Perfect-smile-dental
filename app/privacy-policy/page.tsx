@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
               </ul>
             </section>
 
-            {/* Add more sections as needed */}
+            
           </div>
         </motion.div>
       </div>
