@@ -72,7 +72,7 @@ export default function ParticlesBackground() {
           particle.speedY *= -1
         }
 
-        // Update DOM element
+    
         particle.element.style.left = `${particle.x}px`
         particle.element.style.top = `${particle.y}px`
       })
@@ -82,7 +82,6 @@ export default function ParticlesBackground() {
 
     animate()
 
-    // Handle window resize
     const handleResize = () => {
       particles.forEach((particle) => {
         if (particle.x > window.innerWidth) {

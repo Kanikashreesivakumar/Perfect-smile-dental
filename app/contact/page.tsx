@@ -11,6 +11,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Clock, MapPin, Phone, Mail, MessageSquare } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { TypeAnimation } from 'react-type-animation';
 
 export default function ContactPage() {
   const [formRef, formInView] = useInView({
@@ -30,27 +31,52 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen pt-20">
-     
-      <section className="relative py-12 sm:py-20 bg-gradient-to-r from-primary to-primary-light dark:from-primary-dark dark:to-primary">
-        <div className="absolute inset-0 bg-[url('/images/contact/contact-bg.png')] opacity-20 mix-blend-overlay bg-cover bg-center"></div>
+    <div className="min-h-screen pt-24">
+      <section className="relative py-16 sm:py-24 md:py-32 ">
+        <div className="absolute inset-0 bg-[url('/images/connect.jpg')] mix-blend-overlay bg-cover bg-center"></div>
         <div className="container px-4 mx-auto relative z-10">
-          <div className="max-w-3xl mx-auto text-center text-white">
+          <div className="max-w-6xl mx-auto text-center text-white py-8 sm:py-12 md:py-16">
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6"
+              className="text-4xl sm:text-6xl md:text-4xl lg:text-6xl font-bold mb-3 sm:mb-4 md:mb-6"
             >
-              Contact Us
+              <TypeAnimation
+                sequence={[
+                  'Contact Us',
+                  1000,
+                  'Get in Touch',
+                  1000,
+                  'Reach Out to Us',
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                className="text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-200"
+              />
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-6 md:mb-8 px-2 sm:px-4 max-w-xl mx-auto"
+              className="text-sm sm:text-base md:text-lg lg:text-4xl mb-4 sm:mb-6 md:mb-8 px-2 sm:px-4 max-w-xl mx-auto"
             >
-              We're here to answer your questions and help you schedule your appointment.
+              <TypeAnimation
+                sequence={[
+                  "We're here to answer your questions and help you schedule your appointment.",
+                  1000,
+                  "Let us know how we can assist you with your dental care needs.",
+                  1000,
+                  "Your smile is our priority - reach out to us today.",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                className="text-white/90"
+              />
             </motion.p>
           </div>
         </div>

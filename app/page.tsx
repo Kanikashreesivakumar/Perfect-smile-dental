@@ -63,25 +63,25 @@ export default function Home() {
       title: "Modern Orthodontics",
       description: "Invisible aligners and aesthetic braces using AI-powered treatment planning.",
       icon: "braces",
-      image: "/images/services/orthodontics-small.jpg",
+      image: "/images/den.jpg",
     },
     {
       title: "Painless Root Canal",
       description: "Advanced technology and techniques for completely comfortable root canal therapy.",
       icon: "root-canal",
-      image: "/images/services/root-canal-small.jpg",
+      image: "/images/den.jpg",
     },
     {
       title: "Premium Cosmetic Dentistry",
       description: "Transform your smile with our artistic approach to veneers, bonding, and smile design.",
       icon: "cosmetic",
-      image: "/images/services/cosmetic-dentistry-small.jpg",
+      image: "/images/den.jpg",
     },
     {
       title: "Preventive Excellence",
       description: "Comprehensive care with advanced diagnostics to maintain optimal oral health.",
       icon: "prevention",
-      image: "/images/services/preventive-care-small.jpg",
+      image: "/images/den.jpg",
     },
   ]
 
@@ -89,17 +89,17 @@ export default function Home() {
     {
       title: "State-of-the-Art Technology",
       description: "Our clinic is equipped with the latest dental technology for precise diagnostics and treatment.",
-      image: "/images/home/feature-technology.jpg",
+      image: "/images/mou.jpg",
     },
     {
       title: "Comfortable Environment",
       description: "Experience dental care in a relaxing, spa-like atmosphere designed for your comfort.",
-      image: "/images/home/feature-comfort.jpg",
+      image: "/images/mou.jpg",
     },
     {
       title: "Expert Team",
       description: "Our specialists have advanced training in their fields to provide exceptional care.",
-      image: "/images/home/feature-team.jpg",
+      image: "/images/mou.jpg",
     },
   ]
 
@@ -171,7 +171,7 @@ export default function Home() {
               >
                 <div className="relative h-[200px]">
                   <Image
-                    src={feature.image || "/placeholder.svg"}
+                    src={feature.image || "/mou2.jpg"}
                     alt={feature.title}
                     fill
                     className="object-cover"

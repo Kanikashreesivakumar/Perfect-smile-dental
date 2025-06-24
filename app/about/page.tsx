@@ -29,14 +29,14 @@ export default function AboutPage() {
     {
       name: "Dr. Sarah Johnson",
       role: "Lead Dentist & Founder",
-      image: "/images/dentist-1.jpg",
+      image: "/images/sab.png",
       bio: "Dr. Johnson has over 15 years of experience in cosmetic and restorative dentistry. She graduated from Harvard Dental School and is committed to providing the highest quality care.",
       credentials: ["DDS, Harvard University", "American Dental Association", "Academy of Cosmetic Dentistry"],
     },
     {
       name: "Dr. Michael Chen",
       role: "Orthodontist",
-      image: "/images/dentist-2.jpg",
+      image: "/images/sab.png",
       bio: "Dr. Chen specializes in orthodontics and is an expert in modern braces and clear aligner treatments. He is dedicated to creating beautiful, straight smiles for patients of all ages.",
       credentials: [
         "DMD, University of Pennsylvania",
@@ -47,14 +47,14 @@ export default function AboutPage() {
     {
       name: "Dr. Emily Rodriguez",
       role: "Pediatric Dentist",
-      image: "/images/dentist-3.jpg",
+      image: "/images/sab.png",
       bio: "Dr. Rodriguez loves working with children and making dental visits fun and stress-free. She has a special way with young patients that puts them at ease.",
       credentials: ["DDS, UCLA", "American Academy of Pediatric Dentistry", "Board Certified Pediatric Dentist"],
     },
     {
       name: "Dr. James Wilson",
       role: "Periodontist",
-      image: "/images/dentist-4.jpg",
+      image: "/images/sab.png",
       bio: "Dr. Wilson is our gum health specialist with expertise in treating periodontal disease and performing gum surgeries with minimal discomfort.",
       credentials: [
         "DMD, Boston University",
