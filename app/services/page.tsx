@@ -34,6 +34,7 @@ export default function ServicesPage() {
       icon: "tooth-implant",
         price: "From 800",
       image: "/images/mou2.jpg",
+      href: "/services/dental-implants",
     },
     {
       title: "Modern Orthodontics",
@@ -164,8 +165,8 @@ export default function ServicesPage() {
                   </h3>
                   <p className="text-lg text-gray-600 mb-6">{service.description}</p>
                   <Button asChild className="premium-button rounded-full">
-                    <Link href="/appointment">
-                      Book This Service <ChevronRight className="ml-2 h-4 w-4" />
+                    <Link href={service.href || "/services/dental-implants"}>
+                      Learn More <ChevronRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                 </div>
