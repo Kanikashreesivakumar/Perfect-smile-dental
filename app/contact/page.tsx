@@ -232,7 +232,7 @@ export default function ContactPage() {
               <div className="mt-8 space-y-6">
                 <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
                   <Image
-                    src="/images/contact/reception.png"
+                    src="/images/den.jpg"
                     alt="Perfect Smile Reception"
                     fill
                     className="object-cover"
@@ -241,7 +241,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="relative h-40 rounded-xl overflow-hidden shadow-lg">
                     <Image
-                      src="/images/contact/consultation.png"
+                      src="/images/den.jpg"
                       alt="Consultation Room"
                       fill
                       className="object-cover"
@@ -251,7 +251,7 @@ export default function ContactPage() {
                   
                   <div className="relative h-40 rounded-xl overflow-hidden shadow-lg">
                     <Image
-                      src="/images/contact/treatment-room.png"
+                      src="/images/den.jpg"
                       alt="Treatment Room"
                       fill
                       className="object-cover"

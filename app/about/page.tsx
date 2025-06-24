@@ -50,33 +50,33 @@ export default function AboutPage() {
 
   const timelineEvents = [
     {
-      year: "2005",
+      year: "2015",
       title: "Perfect Smile Founded",
       description:
         "Dr. Sarah Johnson established Perfect Smile with a vision to provide exceptional dental care in a comfortable environment.",
     },
     {
-      year: "2010",
+      year: "2018",
       title: "Expansion of Services",
       description: "Added specialized orthodontic and pediatric dental services to meet growing community needs.",
     },
     {
-      year: "2015",
+      year: "2020",
       title: "Technology Upgrade",
       description: "Invested in state-of-the-art digital imaging and CAD/CAM technology for same-day restorations.",
     },
     {
-      year: "2018",
+      year: "2022",
       title: "New Facility",
       description: "Moved to our current spacious location with modern amenities and expanded treatment rooms.",
     },
     {
-      year: "2020",
+      year: "2023",
       title: "Advanced 3D Imaging",
       description: "Introduced cone beam CT scanning for precise implant planning and complex treatments.",
     },
     {
-      year: "2023",
+      year: "2025",
       title: "Community Recognition",
       description: "Voted 'Best Dental Practice' in the city for the third consecutive year.",
     },
@@ -166,21 +166,23 @@ export default function AboutPage() {
               Where every smile is treated like family </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 place-items-center max-w-7xl mx-auto">
             {team.map((member, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={teamInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="w-full max-w-sm"
               >
                 <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-all group">
-                  <div className="relative h-64 overflow-hidden">
+                  <div className="relative h-64 overflow-hidden flex items-center justify-center">
                     <Image
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
                       fill
-                      className="object-cover transition-transform group-hover:scale-105"
+                      className="object-cover object-center transition-transform group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
                   <CardHeader>
