@@ -106,22 +106,26 @@ export default function AboutPage() {
               From routine checkups to complete smile makeovers — we make dental visits feel less like appointments and more like self-care. At Perfect Smile, you're not just a patient — you're family.
               </p>
               <div className="flex flex-row items-center space-x-4">
-                <Link href="/appointment">
-                  <Button
-                    size="lg"
-                    className="bg-white text-primary hover:bg-white/80 hover:text-primary/80 transition-colors duration-200 shadow-md whitespace-nowrap"
-                  >
+                
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-white text-primary hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-600 hover:text-white transition-all duration-300 shadow-md whitespace-nowrap transform hover:scale-105"
+                >
+                  <Link href="/appointment">
                     Ready to smile?
-                  </Button>
-                </Link>
-                <Link href="/about/experience">
-                  <Button 
-                    variant="outline" 
-                    className="bg-white text-primary hover:bg-primary hover:text-white transition-colors duration-200 border-2 border-primary shadow-md whitespace-nowrap flex items-center px-6 py-3"
-                  >
+                  </Link>
+                </Button>
+                
+                  <Button
+                  asChild
+                  size="lg"
+                  className="bg-white text-primary hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-600 hover:text-white transition-all duration-300 shadow-md whitespace-nowrap transform hover:scale-105"
+                ><Link href="/about/experience">
                     More than just Dentist<ChevronRight className="ml-2 h-5 w-5"/>
+                        </Link>
                   </Button>
-                </Link>
+            
               </div>
             </motion.div>
             <motion.div
