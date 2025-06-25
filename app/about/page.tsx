@@ -95,7 +95,7 @@ export default function AboutPage() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={heroInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6 }}                                          
               className="lg:w-1/2 text-white"
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-6">About our perfect smile</h1>
