@@ -3,7 +3,7 @@
 import DetailedService from "@/components/detailed-service"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ChevronLeft } from "lucide-react"
+import { ChevronLeft, Eye } from "lucide-react"
 
 export default function OrthodonticsPage() {
   return (
@@ -33,6 +33,15 @@ export default function OrthodonticsPage() {
           recovery="Orthodontic treatment is a gradual process, typically lasting 12-24 months depending on complexity. Some discomfort may occur after adjustments or when switching to new aligners, but this usually subsides within a few days. After treatment, retainers are essential to maintain your new smile. We provide detailed care instructions for your specific orthodontic appliance to ensure optimal results."
           price="From $3,500"
         />
+
+        <div className="mt-12 text-center">
+          <Button asChild size="lg" variant="outline" className="rounded-full">
+            <Link href="/gallery">
+              <Eye className="h-5 w-5 mr-2" />
+              View Before & After Gallery
+            </Link>
+          </Button>
+        </div>
       </div>
     </div>
   )

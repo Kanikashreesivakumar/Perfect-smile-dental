@@ -3,7 +3,7 @@
 import DetailedService from "@/components/detailed-service"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ChevronLeft } from "lucide-react"
+import { ChevronLeft, Eye } from "lucide-react"
 
 export default function TeethWhiteningPage() {
   return (
@@ -32,6 +32,15 @@ export default function TeethWhiteningPage() {
           recovery="After your whitening treatment, you may experience some sensitivity, but this typically subsides within 24-48 hours. We recommend avoiding dark-colored foods and beverages (coffee, red wine, etc.) for at least 48 hours after treatment. To maintain your results, good oral hygiene practices and occasional touch-up treatments are recommended."
           price="From $299"
         />
+
+        <div className="mt-12 text-center">
+          <Button asChild size="lg" variant="outline" className="rounded-full">
+            <Link href="/gallery">
+              <Eye className="h-5 w-5 mr-2" />
+              View Before & After Gallery
+            </Link>
+          </Button>
+        </div>
       </div>
     </div>
   )

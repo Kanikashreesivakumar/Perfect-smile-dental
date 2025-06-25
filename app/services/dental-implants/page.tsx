@@ -3,7 +3,7 @@
 import DetailedService from "@/components/detailed-service"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ChevronLeft } from "lucide-react"
+import { ChevronLeft, Eye } from "lucide-react"
 
 export default function DentalImplantsPage() {
   return (
@@ -33,6 +33,15 @@ export default function DentalImplantsPage() {
           recovery="After implant surgery, some swelling and discomfort are normal for a few days. We provide detailed aftercare instructions and pain management options. During the osseointegration period, a temporary prosthetic may be worn. Once fully healed, your implant will function just like a natural tooth and require the same care: regular brushing, flossing, and dental check-ups."
           price="From $1,500 per implant"
         />
+
+        <div className="mt-12 text-center">
+          <Button asChild size="lg" variant="outline" className="rounded-full">
+            <Link href="/gallery">
+              <Eye className="h-5 w-5 mr-2" />
+              View Before & After Gallery
+            </Link>
+          </Button>
+        </div>
       </div>
     </div>
   )
