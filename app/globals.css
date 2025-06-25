@@ -43,7 +43,7 @@
   background-color: #e0f7fa;
 }
 
-/* Premium Button Styles */
+
 .premium-button {
   position: relative;
   overflow: hidden;
@@ -122,7 +122,7 @@
   }
 }
 
-/* 3D Transitions */
+
 .page-transition-container {
   perspective: 1500px;
 }
@@ -138,7 +138,6 @@
   transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Floating Elements */
 .floating-element {
   animation: float 6s ease-in-out infinite;
 }
@@ -164,7 +163,7 @@
   }
 }
 
-/* Glowing Elements */
+
 .glow-effect {
   box-shadow: 0 0 15px rgba(91, 33, 182, 0.5);
   animation: glow 3s infinite alternate;
@@ -179,7 +178,7 @@
   }
 }
 
-/* Particles */
+
 .particles-container {
   position: absolute;
   top: 0;
@@ -218,7 +217,7 @@
   z-index: 1;
 }
 
-/* 3D Card Effect */
+
 .card-3d {
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   transform-style: preserve-3d;
@@ -229,7 +228,7 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* Immersive Scroll Effects */
+
 .scroll-reveal {
   opacity: 0;
   transform: translateY(50px);
@@ -250,7 +249,6 @@
   transform: perspective(1000px) rotateX(0);
 }
 
-/* 3D Depth Scroll Effect */
 .depth-section {
   transform-style: preserve-3d;
   perspective: 1000px;
@@ -273,7 +271,7 @@
   transform: translateZ(100px);
 }
 
-/* Clinic Showcase */
+
 .clinic-showcase {
   overflow: hidden;
   position: relative;
@@ -300,7 +298,7 @@
   transform: scale(1.05);
 }
 
-/* Gradient Text */
+
 .gradient-text {
   background: linear-gradient(to right, #5b21b6, #8b5cf6);
   -webkit-background-clip: text;
