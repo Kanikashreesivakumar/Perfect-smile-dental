@@ -105,7 +105,7 @@ export default function GalleryPage() {
 
   return (
     <div className="min-h-screen pt-20">
-      {/* Hero Section */}
+    
       <section ref={heroRef} className="relative py-20 bg-gradient-to-r from-purple-800 to-purple-600 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/pattern-bg.png')] opacity-10 mix-blend-overlay"></div>
         <div className="container px-4 mx-auto">
@@ -159,7 +159,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Gallery Section */}
+     
       <section ref={galleryRef} className="py-20 bg-white">
         <div className="container px-4 mx-auto">
           <motion.div
@@ -197,7 +197,7 @@ export default function GalleryPage() {
               </TabsTrigger>
             </TabsList>
 
-            {/* Dental Implants Tab */}
+           
             <TabsContent value="dental-implants" className="space-y-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-4 text-purple-800">Dental Implant Transformations</h3>
@@ -248,7 +248,7 @@ export default function GalleryPage() {
               </div>
             </TabsContent>
 
-            {/* Orthodontics Tab */}
+         
             <TabsContent value="orthodontics" className="space-y-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-4 text-purple-800">Orthodontic Transformations</h3>
@@ -299,7 +299,7 @@ export default function GalleryPage() {
               </div>
             </TabsContent>
 
-            {/* Teeth Whitening Tab */}
+        
             <TabsContent value="teeth-whitening" className="space-y-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-4 text-purple-800">Teeth Whitening Results</h3>
@@ -353,7 +353,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+   
       <section ref={ctaRef} className="py-20 bg-gray-50">
         <div className="container px-4 mx-auto">
           <motion.div
