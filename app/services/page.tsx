@@ -33,7 +33,7 @@ export default function ServicesPage() {
         "Our dental implants provide a permanent solution for missing teeth with a success rate of over 98%. Using 3D imaging and computer-guided placement, we ensure perfect positioning and integration with your natural bone. The result is a restoration that looks, feels, and functions exactly like your natural teeth.",
       icon: "tooth-implant",
         price: "From 800",
-      image: "/images/mou2.jpg",
+      image: "/images/mou2.svg",
       href: "/services/dental-implants",
     },
     {
@@ -42,7 +42,7 @@ export default function ServicesPage() {
         "Transform your smile with our invisible aligners and aesthetic braces. Our AI-powered treatment planning creates a digital model of your perfect smile before treatment begins. We offer clear aligners, ceramic braces, and traditional options, all with accelerated treatment times thanks to our proprietary technology.",
       icon: "braces",
       price: "From 3,500",
-      image: "/images/mou2.jpg",
+      image: "/images/mou2.svg",
     },
     {
       title: "Painless Root Canal",
