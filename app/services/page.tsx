@@ -22,7 +22,7 @@ export default function ServicesPage() {
     {
       title: "Advanced Teeth Whitening",
       description:
-        "Our professional whitening treatments use the latest LED-activated technology to remove deep stains and discoloration. The procedure is gentle on enamel while delivering dramatic results that last. We customize each treatment to your specific needs, ensuring optimal brightness without sensitivity.",
+        "Our professional  stains and discoloration. The procedure is gentle on enamel while delivering dramatic results that last. We customize each treatment to your specific needs, ensuring optimal brightness without sensitivity.",
       icon: "tooth-brush",
         price: "From 800", 
       image: "/images/mou2.jpg",
