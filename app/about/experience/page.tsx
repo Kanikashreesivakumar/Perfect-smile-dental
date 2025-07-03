@@ -91,7 +91,7 @@ export default function ExperiencePage() {
         </div>
 
         <div className="mt-16 text-center">
-          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Ready to Experience the Difference?</h2>
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Ready </h2>
           <Button asChild size="lg" className="premium-button rounded-full">
             <Link href="/appointment">Schedule Your Visit</Link>
           </Button>

@@ -58,12 +58,12 @@ export default function AboutPage() {
     {
       year: "2018",
       title: "Expansion of Services",
-      description: "Added specialized orthodontic and pediatric dental services to meet growing community needs.",
+      description: "Added community needs.",
     },
     {
       year: "2020",
       title: "Technology Upgrade",
-      description: "Invested in state-of-the-art digital imaging and CAD/CAM technology for same-day restorations.",
+      description: "Invested in  same-day restorations.",
     },
     {
       year: "2022",
