@@ -271,7 +271,7 @@ export default function ContactPage() {
                 <CardHeader className="bg-primary/10 dark:bg-primary-dark/10">
                   <CardTitle>Send Us a Message</CardTitle>
                   <CardDescription>
-                    Fill out the form below and we'll get back to you as soon as possible.
+                    Fill out the form possible.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="pt-6">
@@ -295,7 +295,7 @@ export default function ContactPage() {
                       <label htmlFor="phone" className="text-sm font-medium">
                         Phone Number
                       </label>
-                      <Input id="phone" type="tel" placeholder="+91 1234567890" />
+                      <Input id="phone" type="tel" placeholder="+91 7418761589" />
                     </div>
 
                     <div className="space-y-2">
